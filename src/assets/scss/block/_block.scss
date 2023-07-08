@@ -1,0 +1,125 @@
+.block {
+  position: relative;
+  height: auto;
+  margin-top: 30px;
+
+  &__wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-height: 400px;
+    min-height: 400px;
+    height: 100%;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 24px 36px -16px rgba(0,0,0,.1), 0 4px 16px rgba(0,0,0,.08);
+    background-color: $white-one;
+    transition: 0.3s $cubicBezier-one;
+
+    .block__number {
+      font-size: 70px;
+      color: #9db1bc;
+      transition: 0.3s $cubicBezier-one;
+    }
+
+    .block__text {
+      box-sizing: border-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: max-content;
+      height: 100%;
+      font-size: 16px;
+      word-break: break-word;
+      transition: 0.3s $cubicBezier-one;
+    }
+
+    &.change {
+      background-color: #9db1bc;
+
+      .block__number,
+      .block__text {
+        color: $white-one;
+      }
+    }
+  }
+
+  &__number,
+  &__text {
+    line-height: 1.5em;
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &.active {
+    .block__tooltip {
+      z-index: 12;
+      opacity: 1;
+      margin-top: -2rem;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -10rem;
+    padding: 10px 10px;
+    border-radius: 4px;
+    background: #9db1bc;
+    font-size: 14px;
+    color: $white-one;
+    box-shadow: 0 24px 36px -16px rgba(0,0,0,.1), 0 4px 16px rgba(0,0,0,.08);
+    transform: translateY(-100%);
+    transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-top: -1px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 20px solid #9db1bc;
+    }
+
+    &__closed {
+      position: relative;
+      float: right;
+      padding-bottom: 7px;
+      padding-left: 7px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .block__number {
+      float: left;
+      margin-right: 10px;
+      font-size: 40px;
+    }
+
+    .block__text {
+      word-break: break-all;
+    }
+
+    .block__number,
+    .block__text {
+      color: $white-one;
+    }
+  }
+}

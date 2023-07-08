@@ -1,0 +1,24 @@
+/* Default styles */
+@import './variables';
+@import './fonts';
+@import './color-theme';
+@import './theme';
+@import './default';
+@import './animation';
+
+/* Mixins */
+@import './mixins/grid';
+@import './mixins/utilities';
+
+/* Components */
+@import './сomponents/button';
+@import './сomponents/header';
+@import './сomponents/typography';
+@import './сomponents/footer';
+@import './сomponents/back-top';
+@import './сomponents/icon';
+
+/* Main */
+@import './main/main';
+@import './block/block';
+

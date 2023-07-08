@@ -1,0 +1,14 @@
+doctype html
+
+block vars
+
+html(lang="ru")
+  head
+    include ../partials/head
+  body
+
+    include ../../templates/mixins/mixins
+    .cover-container
+      include ../../templates/partials/header
+      block content
+      include ../../templates/partials/footer

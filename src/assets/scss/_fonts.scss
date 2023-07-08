@@ -1,0 +1,53 @@
+@font-face {
+  font-family: '#{$font-name_one} #{$font-weight-light}';
+  src: url('#{$font-path_one}Rubiklight.woff2')
+      format('woff2'),
+    url('#{$font-path_one}Rubiklight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$font-name_one} #{$font-weight-regular}';
+  src: url('#{$font-path_one}Rubik.woff2')
+      format('woff2'),
+    url('#{$font-path_one}Rubik.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$font-name_one} #{$font-weight-medium}';
+  src: url('#{$font-path_one}Rubikmedium.woff2')
+      format('woff2'),
+    url('#{$font-path_one}Rubikmedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$font-name_one} #{$font-weight-bold}';
+  src: url('#{$font-path_one}Rubikbold.woff2')
+      format('woff2'),
+    url('#{$font-path_one}Rubikbold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$font-name_two} #{$font-weight-regular}';
+  src: url('#{$font-path_two}Roboto.woff2')
+  format('woff2'),
+  url('#{$font-path_two}Roboto.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '#{$font-name_three} #{$font-weight-bold}';
+  src: url('#{$font-path_three}exo2bold.woff2')
+  format('woff2'),
+  url('#{$font-path_three}exo2bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

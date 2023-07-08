@@ -1,0 +1,111 @@
+.title {
+  font-family: $rubik-regular;
+  color: $black-default;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+
+  &__h1 {
+
+    font-size: 30px;
+    font-family: $rubik-bold;
+    line-height: 33px;
+
+  }
+
+  &__h2 {
+
+    padding-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-family: $rubik-bold;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+
+  }
+
+  &__h3 {
+
+    font-size: 16px;
+    font-family: $rubik-bold;
+
+  }
+
+  &__h4 {
+
+    font-size: 14px;
+    font-family: $rubik-bold;
+
+  }
+
+  &__h5 {
+
+    font-size: 14px;
+    font-family: $rubik-regular;
+
+  }
+
+  &__h6 {
+
+    font-size: 14px;
+    font-family: $rubik-light;
+
+  }
+
+  &_white {
+    color: $white-one;
+  }
+
+  &__grey {
+
+    &_one {
+      color: $gray-one;
+    }
+
+    &_two {
+      color: $gray-two;
+    }
+
+    &_three {
+      color: $gray-three;
+    }
+
+  }
+
+  &_center {
+
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  &_right {
+
+    text-align: right;
+    justify-content: flex-end;
+
+  }
+
+  &_left {
+
+    text-align: left;
+    justify-content: flex-start;
+
+  }
+
+  &_end {
+
+    text-align: right;
+    justify-content: flex-end;
+
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+}
+
+
+

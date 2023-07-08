@@ -1,0 +1,46 @@
+.footer {
+  width: 100%;
+  margin-top: auto;
+  background-color: #f7f9fc;
+
+  &__copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: #9db1bc;
+
+
+      img {
+        padding-right: 6px;
+        padding-left: 6px;
+
+        &:first-child {
+          @media screen and (max-width: 479.98px) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    &_text {
+      &_right {
+        @media screen and (min-width: $small_smart) {
+          text-align: right;
+        }
+      }
+    }
+
+    &_pr-35 {
+      @media screen and (min-width: 428px) {
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+extends ../templates/layouts/default
+
+block vars
+	-
+		wayImg = "./assets/img/";
+
+block content
+
+	main.main.align-items-lg-center(role='main')
+		section.main__block(role='region')
+			.container
+				.main__change-bg-block
+					.main__change-bg-block_wrapper
+						input#changeBgBlock(type="checkbox" name="checkbox")
+						label(for="changeBgBlock") Изменить цвет четных блоков
+
+				.main__content
+					.row.row-cols-lg-4.main__content_pb-10
+						.block
+							.block__wrapper
+								span.block__number 1
+
+						.block
+							.block__wrapper
+								span.block__number 2
+
+						.block
+							.block__wrapper
+								span.block__number 3
+								span.block__text
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi repellendus tempore ut? Exercitationem itaque laboriosam quae quo reiciendis. Autem deleniti eos explicabo illum molestias, nesciunt nihil pariatur quae quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi repellendus tempore ut? Exercitationem itaque laboriosam quae quo reiciendis. Autem deleniti eos explicabo illum molestias, nesciunt nihil pariatur quae quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi repellendus tempore ut? Exercitationem itaque laboriosam quae quo reiciendis. Autem deleniti eos explicabo illum molestias, nesciunt nihil pariatur quae quas.
+
+						.block
+							.block__wrapper
+								span.block__number 4
+								span.block__text
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi repellendus tempore ut? Exercitationem itaque laboriosam quae quo reiciendis. Autem deleniti eos explicabo illum molestias, nesciunt nihil pariatur quae quas.
+					.row
+						.main__add-a-block
+							button(type="block") Добавить блок
+
+
+
+
+

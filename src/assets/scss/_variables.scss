@@ -1,0 +1,61 @@
+// Way img
+$way-img: "../img/" !default;
+
+// Fonts weight
+$font-weight-light: 'Light';
+$font-weight-regular: 'Regular';
+$font-weight-medium: 'Medium';
+$font-weight-bold: 'Bold';
+
+// Fonts name
+$font-name_one: "Rubik";
+$font-name_two: "Roboto";
+$font-name_three: "Exo2";
+
+// Fonts Sans-serif
+$font-sans-serif: sans-serif;
+
+// Way fonts
+$font-path_one: "../fonts/Rubik/" !default;
+$font-path_two: "../fonts/Roboto/" !default;
+$font-path_three: "../fonts/Exotwo/" !default;
+
+// Font family
+$rubik-light:
+        "#{$font-name_one $font-weight-light}",
+        $font-sans-serif;
+
+$rubik-regular:
+        "#{$font-name_one $font-weight-regular}",
+        $font-sans-serif;
+
+$rubik-medium:
+        "#{$font-name_one $font-weight-medium}",
+        $font-sans-serif;
+
+$rubik-bold:
+        "#{$font-name_one $font-weight-bold}",
+        $font-sans-serif;
+
+$roboto-regular:
+        "#{$font-name_two $font-weight-regular}",
+        $font-sans-serif;
+
+$exotwo-bold:
+        "#{$font-name_three $font-weight-bold}",
+        $font-sans-serif;
+
+// Variables
+$bs-gutter-x: 3rem;
+
+// Media
+$desktop-width: 1024px;
+$middle-tablet_width: 992px;
+$tablet-width: 768px;
+$middle_smart: 576px;
+$small_smart: 480px;
+
+// Cubic-Bezier
+$cubicBezier-one: cubic-bezier(0.8, 0.16, 0.42, 0.89);
+
+
