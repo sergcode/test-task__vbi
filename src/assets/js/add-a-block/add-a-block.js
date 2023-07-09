@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="block__wrapper">
         <span class="block__number">${num}</span>
         <span class="block__text">
-          ${randomWord(40)}
+          ${randomWord(70)}
         </span>
       </div>
     `
