@@ -1,11 +1,10 @@
 {
-  "name": "sergcode_gulp",
+  "name": "test-task__vbi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "datatables.net": "^1.10.19",
-    "owl.carousel": "^2.3.4"
+    "datatables.net": "^1.10.19"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
