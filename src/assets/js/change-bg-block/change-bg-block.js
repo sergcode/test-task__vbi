@@ -1,23 +1,7 @@
 'use strict'
+import {randBackground, randColorText} from '../random/random';
 
 window.addEventListener('DOMContentLoaded', () => {
-  function randBackground(parent) {
-    const r = Math.floor(Math.random() * 256),
-      g = Math.floor(Math.random() * 256),
-      b = Math.floor(Math.random() * 256)
-    parent.style.background = '#' + r.toString(16) + g.toString(16) + b.toString(16)
-  }
-
-  function randColorText(parent) {
-    const blockWrapText = parent.children,
-      r = Math.floor(Math.random() * 256),
-      g = Math.floor(Math.random() * 256),
-      b = Math.floor(Math.random() * 256)
-    for (let child of blockWrapText) {
-      child.style.color = '#' + r.toString(16) + g.toString(16) + b.toString(16)
-    }
-  }
-
   function changeBgBlock() {
     const changeBgBlock = document.getElementById('changeBgBlock')
 
