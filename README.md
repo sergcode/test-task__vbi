@@ -5,7 +5,9 @@
 Режим разработки:
 
 gulp dev
-Версия для production
+
+
+Версия для production:
 
 gulp build
 
